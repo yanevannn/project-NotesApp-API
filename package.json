@@ -1,0 +1,17 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "Project ID_Camp Notesapp",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.12",
+    "dotenv": "^16.4.7",
+    "nanoid": "^3.3.8",
+    "pg": "^8.13.1"
+  }
+}
