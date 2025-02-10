@@ -57,9 +57,14 @@ class NotesHandler {
 
     await this._service.editNoteById(id, request.payload);
 
+    const updatedNote = await this._service.getNoteById(id);
+
     return {
       status: "success",
       message: "Catatan berhasil diperbarui",
+      data: {
+        note: updatedNote, // Pastikan response mengandung `note`
+      },
     };
   }
 
